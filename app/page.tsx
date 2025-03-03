@@ -109,7 +109,11 @@ const DiceGame = () => {
         </div>
 
         <div className="mb-6 z-[100]">
-          <Dice3D onRollComplete={handleRollComplete} account={account} />
+          <Dice3D
+            onRollComplete={handleRollComplete}
+            account={account}
+            setResultMessage={setResultMessage}
+          />
         </div>
 
         {resultMessage && (

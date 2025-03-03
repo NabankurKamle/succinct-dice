@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { Dispatch, SetStateAction, useState } from "react";
 import "./Dice3D.css";
 
 interface Dice3DProps {
   onRollComplete: (result: number) => void;
   account: string | null;
+  setResultMessage: Dispatch<SetStateAction<string>>;
 }
 
-const Dice3D: React.FC<Dice3DProps> = ({ onRollComplete, account }) => {
+const Dice3D: React.FC<Dice3DProps> = ({
+  onRollComplete,
+  account,
+  setResultMessage,
+}) => {
   const [isRolling, setIsRolling] = useState(false);
   const [result, setResult] = useState<number | null>(null);
 
@@ -19,6 +24,7 @@ const Dice3D: React.FC<Dice3DProps> = ({ onRollComplete, account }) => {
     playSound();
     setIsRolling(true);
     setResult(null);
+    setResultMessage("");
 
     setTimeout(() => {
       const roll = Math.floor(Math.random() * 6) + 1;
