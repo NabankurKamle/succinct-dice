@@ -41,12 +41,12 @@ const Dice3D: React.FC<Dice3DProps> = ({
           className={`dice ${isRolling ? "rolling" : ""}`}
           onClick={rollDice}
         >
-          <div className="face front text-black">{result}</div>
-          <div className="face back text-black">{result}</div>
-          <div className="face left text-black">{result}</div>
-          <div className="face right text-black">{result}</div>
-          <div className="face top text-black">{result}</div>
-          <div className="face bottom text-black">{result}</div>
+          <div className="face front text-yellow-400">{result}</div>
+          <div className="face back text-yellow-400">{result}</div>
+          <div className="face left text-yellow-400">{result}</div>
+          <div className="face right text-yellow-400">{result}</div>
+          <div className="face top text-yellow-400">{result}</div>
+          <div className="face bottom text-yellow-400">{result}</div>
         </div>
       </div>
       <button

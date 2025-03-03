@@ -77,14 +77,7 @@ const DiceGame = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-pink-500 via-pink-600 to-pink-500 text-white relative">
       {/* Wallet Connect */}
-      <img
-        src={"/succinct.svg"}
-        className="absolute h-[600px] top-28 left-10"
-      />
-      <img
-        src={"/succinct.svg"}
-        className="absolute h-[600px] top-28 right-10"
-      />
+      <img src={"/succinctbg.png"} className="absolute h-full w-full" />
 
       <WalletConnect setAccount={setAccount} account={account} />
 
