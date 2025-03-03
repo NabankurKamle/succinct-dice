@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Dice3D from "../components/Dice3d"; // Import 3D Dice component
 import WalletConnect from "../components/ConnectWallet"; // Wallet Connect Component
 import confetti from "canvas-confetti"; // Wallet Connect Component
+import { BsTwitterX } from "react-icons/bs";
 
 const DiceGame = () => {
   const [account, setAccount] = useState<string | null>(null);
@@ -114,6 +115,20 @@ const DiceGame = () => {
             {resultMessage}
           </p>
         )}
+      </div>
+      <div className="z-20">
+        <p className="text-black font-semibold text-center text-2xl">
+          Follow me if you like it
+        </p>
+        <div className="w-full flex items-center justify-center gap-5 text-black mt-2">
+          <a
+            href="https://x.com/KamleNabankur"
+            target="_blank"
+            className="text-2xl text-center"
+          >
+            <BsTwitterX />
+          </a>
+        </div>
       </div>
     </div>
   );
