@@ -7,7 +7,7 @@ import confetti from "canvas-confetti"; // Wallet Connect Component
 
 const DiceGame = () => {
   const [account, setAccount] = useState<string | null>(null);
-  const [selectedNumber, setSelectedNumber] = useState<number | null>(null);
+  const [selectedNumber, setSelectedNumber] = useState<number | null>(1);
   const [diceRoll, setDiceRoll] = useState<number | null>(null);
   const [resultMessage, setResultMessage] = useState<string>("");
 
